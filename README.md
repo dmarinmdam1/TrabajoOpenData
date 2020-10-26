@@ -7,7 +7,7 @@
 
 <!-- ==================================================================================================== -->
 
-## **Tabla de contenidos** <a name="RDP"></a>
+## **Tabla de contenidos** <a name="TDC"></a>
 
 - [Registro de progreso](#RDP)
 
