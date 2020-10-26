@@ -8,7 +8,7 @@
 <!-- ==================================================================================================== -->
 
 ## **Tabla de contenidos** (orden cronológico) <a name="TDC"></a>
-- [Tabla de contenidos (meta)](#TDC)
+- [Tabla de contenidos](#TDC) (meta)
 - [Día 1 - (21/10/2020) - Primer commit](#D1)
 - [Día 2 - (26/10/2020) - Punto de partida](#D2)
 
