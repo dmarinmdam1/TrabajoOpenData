@@ -3,6 +3,7 @@
 
 # **TrabajoOpenData** - Registro de progreso
 
+---
 <!-- ======================================================================================================================== -->
 ###### <br>
 
@@ -32,7 +33,6 @@
 ###### <br>
 
 ## **Día 1** &nbsp; - &nbsp; (21/10/2020) &nbsp; - &nbsp; _Primer commit_
-###### <br>
 
 - Creado el repositorio de GitHub en el que se alojará el proyecto
 
