@@ -1,7 +1,7 @@
 
 <!-- ==================================================================================================== -->
 
-# **TrabajoOpenData** - _Daniel Marín_ - Registro de progreso
+# **TrabajoOpenData** - _Daniel Marín_
 ---
 
 <br>
@@ -12,6 +12,7 @@
 
 - [Tabla de contenidos](#TDC) (meta)
 - [Descripción de la aplicación](#DDLA) (provisional)
+- [Descripción de las ramas](#DDLR) (provisional)
 - [Registro de progreso](#RDP)
 
 <br>
@@ -44,6 +45,17 @@ La aplicación descarga la última versión del archivo con la información sobr
 
 Entre las numerosas características y opciones de esta app, encontramos la opción de utilizar tu ubicación actual, guardar farmacias favoritas, llamar u obtener direcciones desde la propia aplicación...
 
+<br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+<br>
+
+## **Descripción de las ramas** <a name="DDLR"></a>
+
+... rellenar esto ..
 
 <br>
 
