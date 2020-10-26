@@ -1,12 +1,12 @@
 
 <!-- ==================================================================================================== -->
 
-# __TrabajoOpenData__ - Registro de progreso
+# **TrabajoOpenData** - Registro de progreso
 
 ---
 <!-- ==================================================================================================== -->
 
-## __Día 2__ &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_
+## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_
 
 - Creado y añadido al repositorio el archivo "README.md" en el que se registrará el progreso del proyecto
 
@@ -20,7 +20,7 @@
 
     - "desarrollo": rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-    - "versiones": rama en la que se publicará el progreso presentable cada miércoles
+    - "versiones": rama en la que se publicará el progreso presentable de cada día
 
     - "master": rama en la que se publicarán las versiones de la app presentables al público
 
@@ -28,7 +28,7 @@
 
 <!-- ==================================================================================================== -->
 
-## __Día 1__ &nbsp; - &nbsp; (21/10/2020) &nbsp; - &nbsp; _Primer commit_
+## **Día 1** &nbsp; - &nbsp; (21/10/2020) &nbsp; - &nbsp; _Primer commit_
 
 - Creado el repositorio de GitHub en el que se alojará el proyecto
 
