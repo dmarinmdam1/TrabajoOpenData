@@ -7,9 +7,38 @@
 
 <!-- ==================================================================================================== -->
 
+## **Tabla de contenidos** <a name="RDP"></a>
+
+- [Registro de progreso](#RDP)
+
+<br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+<br>
+
+## **Descripción de la aplicación** _(provisional)_ <a name="RDP"></a>
+
+TL:DR; muestra representadas tanto en un mapa como en una lista las farmacias de guardia de Navarra.
+
+La aplicación descarga la última versión del archivo con la información sobre las farmacias de guardia de Navarra (proveniente de los Datos Abiertos del Gobierno de Navarra) y lo utiliza para representarla tanto en un mapa (Google Maps) como en una lista.
+
+Entre las numerosas características y opciones de esta app, encontramos la opción de utilizar tu ubicación actual, guardar farmacias favoritas, llamar u obtener direcciones desde la propia aplicación...
+
+
+<br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+<br>
+
 ## **Registro de progreso** <a name="RDP"></a>
 | Cronológico                                    | Reciente                                       |
-| ---------------------------------------------- | -----------------------------------------    |
+| ---------------------------------------------- | ---------------------------------------------- |
 | [Día 1 - (21/10/2020) - Primer commit](#D1)    | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
 | [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 1 - (21/10/2020) - Primer commit](#D1)    |
 
