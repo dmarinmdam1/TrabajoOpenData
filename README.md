@@ -3,10 +3,19 @@
 
 # **TrabajoOpenData** - Registro de progreso
 
----
+
 <!-- ==================================================================================================== -->
 
-## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_
+## **Tabla de contenidos** (orden cronológico) <a name="TDC"></a>
+- [Tabla de contenidos (meta)](#TDC)
+- [Día 1 - (21/10/2020) - Primer commit](#D1)
+- [Día 2 - (26/10/2020) - Punto de partida](#D2)
+
+---
+
+<!-- ==================================================================================================== -->
+
+## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_ <a name="D2"></a>
 
 - Creado y añadido al repositorio el archivo "README.md" en el que se registrará el progreso del proyecto
 
@@ -28,7 +37,7 @@
 
 <!-- ==================================================================================================== -->
 
-## **Día 1** &nbsp; - &nbsp; (21/10/2020) &nbsp; - &nbsp; _Primer commit_
+## **Día 1** &nbsp; - &nbsp; (21/10/2020) &nbsp; - &nbsp; _Primer commit_ <a name="D1"></a>
 
 - Creado el repositorio de GitHub en el que se alojará el proyecto
 
