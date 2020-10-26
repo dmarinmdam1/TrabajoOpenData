@@ -3,6 +3,7 @@
 
 # **TrabajoOpenData** - _Daniel Marín_ - Registro de progreso
 
+<br>
 
 <!-- ==================================================================================================== -->
 
@@ -10,6 +11,8 @@
 - [Tabla de contenidos (meta)](#TDC)
 - [Día 1 - (21/10/2020) - Primer commit](#D1)
 - [Día 2 - (26/10/2020) - Punto de partida](#D2)
+
+<br>
 
 ---
 
