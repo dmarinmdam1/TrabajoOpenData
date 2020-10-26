@@ -10,6 +10,8 @@
 
 ## **Tabla de contenidos** <a name="TDC"></a>
 
+- [Tabla de contenidos](#TDC) (meta)
+- [Descripción de la aplicación](#DDLA) (provisional)
 - [Registro de progreso](#RDP)
 
 <br>
@@ -20,7 +22,21 @@
 
 <br>
 
-## **Descripción de la aplicación** _(provisional)_ <a name="RDP"></a>
+## **Información preliminar sobre el pripio README.md** _(meta)_ <a name="DDLA"></a>
+
+Tanto la información contenida en este archivo como su disposición están sujetos a la probable posibilidad de ser modificados numerosas veces en el futuro. Lo detallada y organizada que esté la información aquí presentada está directamente relacionado con el tiempo del que disponga y las energías que me queden en el momento de trabajar en ello.
+
+> No se si es una suerte o una desgracia pero mi potencial y mis resultados están limitados por el tiempo del que dispongo. 
+
+<br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+<br>
+
+## **Descripción de la aplicación** _(provisional)_ <a name="DDLA"></a>
 
 TL:DR; muestra representadas tanto en un mapa como en una lista las farmacias de guardia de Navarra.
 
