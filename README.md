@@ -7,7 +7,6 @@
 ###### <br>
 
 ## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_
-###### <br>
 
 - Creado y añadido al repositorio el archivo "README.md" en el que se registrará el progreso del proyecto
 
