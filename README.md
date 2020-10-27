@@ -87,7 +87,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Mejorado el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md)
 
-    - (ya me he dado cuenta de que es _`README.md`_ y no "_`README.m`**`e`**_")
+    - (ya me he dado cuenta de que es _`README.md`_ y no "_<code>README.m<b>e</b></code>_")
     - (a partir de ahora los mensajes de commit "`Actualizado el "README.md"`" estarán bien escritos)
 
 ---
