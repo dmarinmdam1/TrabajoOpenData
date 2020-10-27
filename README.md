@@ -11,11 +11,11 @@
 
 ## **Tabla de contenidos** <a name="TDC"></a>
 
-- [Tabla de contenidos](#TDC) (meta)
-- [Información preliminar sobre el propio README.md](#IPSEPR) (meta)
-- [Descripción de la aplicación](#DDLA) (provisional)
-- [Descripción de las ramas](#DDLR)
-- [Registro de progreso](#RDP)
+- [**Tabla de contenidos**](#TDC) (meta)
+- [**Información preliminar sobre el propio** `README.md`](#IPSEPR) (meta)
+- [**Descripción de la aplicación**](#DDLA) (provisional)
+- [**Descripción de las ramas**](#DDLR)
+- [**Registro de progreso**](#RDP)
 
 <br>
 
@@ -85,7 +85,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_ <a name="D2"></a>
 
-- Creado y añadido al repositorio el archivo "README.md" en el que se registrará el progreso del proyecto
+- Creado y añadido al repositorio el archivo `README.md` en el que se registrará el progreso del proyecto
 
     - (¿no será esto Inception al hablar del "Registro de progreso" en el "Registro de progreso"?)
 
@@ -93,7 +93,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
     - (¿no será esto ... ?)
 
-- Creadas las ramas "desarrollo" y "versiones"
+- Creadas las ramas `desarrollo` y `versiones`
 
     - `desarrollo` : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
@@ -113,7 +113,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Configurado SourceTree para el control de versiones
 
-- Añadido al repositorio el archivo ".gitignore" cuyo contenido he sacado de internet de una plantilla de flutter
+- Añadido al repositorio el archivo `.gitignore` cuyo contenido he sacado de internet de una plantilla de flutter
 
 ---
 
