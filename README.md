@@ -72,10 +72,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 <br>
 
 ## **Registro de progreso** <a name="RDP"></a>
-| Cronológico                                    | Reciente                                       |
-| ---------------------------------------------- | ---------------------------------------------- |
-| [Día 1 - (21/10/2020) - Primer commit](#D1)    | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
-| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 1 - (21/10/2020) - Primer commit](#D1)    |
+| Cronológico                                               | Reciente                                                  |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| [Día 1 - (21/10/2020) - Primer commit](#D1)               | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
+| [Día 2 - (26/10/2020) - Punto de partida](#D2)            | [Día 2 - (26/10/2020) - Punto de partida](#D2)            |
+| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 1 - (21/10/2020) - Primer commit](#D1)               |
 
 <br>
 
@@ -83,7 +84,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 <!-- ==================================================================================================== -->
 
-## **Día 3** &nbsp; - &nbsp; (27/10/2020) &nbsp; - &nbsp; _Pequeños retoques a la base_ <a name="D2"></a>
+## **Día 3** &nbsp; - &nbsp; (27/10/2020) &nbsp; - &nbsp; _Pequeños retoques a la base_ <a name="D3"></a>
 
 - Mejorado el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md)
 
