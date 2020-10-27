@@ -83,9 +83,20 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 <!-- ==================================================================================================== -->
 
+## **Día 3** &nbsp; - &nbsp; (27/10/2020) &nbsp; - &nbsp; _Pequeños retoques a la base_ <a name="D2"></a>
+
+- Mejorado el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md)
+
+    - (ya me he dado cuenta de que es _`README.md`_ y no "_`README.m`**`e`**_")
+    - (a partir de ahora los mensajes de commit "`Actualizado el "README.md"`" estarán bien escritos)
+
+---
+
+<!-- ==================================================================================================== -->
+
 ## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_ <a name="D2"></a>
 
-- Creado y añadido al repositorio el archivo [`README.me`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md) en el que se registrará el progreso del proyecto
+- Creado y añadido al repositorio el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md) en el que se registrará el progreso del proyecto
 
     - (¿no será esto Inception al hablar del "Registro de progreso" en el "Registro de progreso"?)
 
