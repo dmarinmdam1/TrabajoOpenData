@@ -11,8 +11,9 @@
 ## **Tabla de contenidos** <a name="TDC"></a>
 
 - [Tabla de contenidos](#TDC) (meta)
+- [Información preliminar sobre el propio README.md](#IPSEPR)
 - [Descripción de la aplicación](#DDLA) (provisional)
-- [Descripción de las ramas](#DDLR) (provisional)
+- [Descripción de las ramas](#DDLR)
 - [Registro de progreso](#RDP)
 
 <br>
@@ -23,7 +24,7 @@
 
 <br>
 
-## **Información preliminar sobre el pripio README.md** _(meta)_ <a name="DDLA"></a>
+## **Información preliminar sobre el propio README.md** _(meta)_ <a name="IPSEPR"></a>
 
 Tanto la información contenida en este archivo como su disposición están sujetos a la probable posibilidad de ser modificados numerosas veces en el futuro. Lo detallada y organizada que esté la información aquí presentada está directamente relacionado con el tiempo del que disponga y las energías que me queden en el momento de trabajar en ello.
 
@@ -55,7 +56,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Descripción de las ramas** <a name="DDLR"></a>
 
-... rellenar esto ..
+- "desarrollo": rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+
+- "versiones": rama en la que se publicará el progreso presentable de cada día
+
+- "master": rama en la que se publicarán las versiones de la app presentables al público
 
 <br>
 
