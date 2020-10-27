@@ -11,7 +11,7 @@
 ## **Tabla de contenidos** <a name="TDC"></a>
 
 - [Tabla de contenidos](#TDC) (meta)
-- [Información preliminar sobre el propio README.md](#IPSEPR)
+- [Información preliminar sobre el propio README.md](#IPSEPR) (meta)
 - [Descripción de la aplicación](#DDLA) (provisional)
 - [Descripción de las ramas](#DDLR)
 - [Registro de progreso](#RDP)
