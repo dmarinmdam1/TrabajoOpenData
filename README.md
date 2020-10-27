@@ -57,11 +57,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Descripción de las ramas** <a name="DDLR"></a>
 
-- `desarrollo`: rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+- `desarrollo` : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-- `versiones`: rama en la que se publicará el progreso presentable de cada día
+- `versiones` : rama en la que se publicará el progreso presentable de cada día
 
-- `master`: rama en la que se publicarán las versiones de la app presentables al público
+- `master` : rama en la que se publicarán las versiones de la app presentables al público
 
 <br>
 
@@ -95,11 +95,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Creadas las ramas "desarrollo" y "versiones"
 
-    - `desarrollo`: rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+    - `desarrollo` : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-    - `versiones`: rama en la que se publicará el progreso presentable de cada día
+    - `versiones` : rama en la que se publicará el progreso presentable de cada día
 
-    - `master`: rama en la que se publicarán las versiones de la app presentables al público
+    - `master` : rama en la que se publicarán las versiones de la app presentables al público
 
 - Creada y terminada la [presentación con la documentación esquemática](https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing)
 
