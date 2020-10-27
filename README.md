@@ -57,11 +57,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Descripción de las ramas** <a name="DDLR"></a>
 
-- `desarrollo` : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+- [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-- `versiones` : rama en la que se publicará el progreso presentable de cada día
+- [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones) : rama en la que se publicará el progreso presentable de cada día
 
-- `master` : rama en la que se publicarán las versiones de la app presentables al público
+- [`master`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/master) : rama en la que se publicarán las versiones de la app presentables al público
 
 <br>
 
@@ -85,7 +85,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_ <a name="D2"></a>
 
-- Creado y añadido al repositorio el archivo `README.md` en el que se registrará el progreso del proyecto
+- Creado y añadido al repositorio el archivo [`README.me`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md) en el que se registrará el progreso del proyecto
 
     - (¿no será esto Inception al hablar del "Registro de progreso" en el "Registro de progreso"?)
 
@@ -93,13 +93,13 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
     - (¿no será esto ... ?)
 
-- Creadas las ramas `desarrollo` y `versiones`
+- Creadas las ramas [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) y [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones)
 
-    - `desarrollo` : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+    - [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-    - `versiones` : rama en la que se publicará el progreso presentable de cada día
+    - [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones) : rama en la que se publicará el progreso presentable de cada día
 
-    - `master` : rama en la que se publicarán las versiones de la app presentables al público
+    - [`master`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/master) : rama en la que se publicarán las versiones de la app presentables al público
 
 - Creada y terminada la [presentación con la documentación esquemática](https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing)
 
@@ -113,7 +113,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Configurado SourceTree para el control de versiones
 
-- Añadido al repositorio el archivo `.gitignore` cuyo contenido he sacado de internet de una plantilla de flutter
+- Añadido al repositorio el archivo [`.gitignore`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/.gitignore) cuyo contenido he sacado de internet de una plantilla de flutter
 
 ---
 
