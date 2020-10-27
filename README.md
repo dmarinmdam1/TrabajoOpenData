@@ -15,6 +15,7 @@
 - [**Información preliminar sobre el propio** `README.md`](#IPSEPR) (meta)
 - [**Descripción de la aplicación**](#DDLA) (provisional)
 - [**Descripción de las ramas**](#DDLR)
+- [**Características secundarias a desarrollar**](#CCAD)
 - [**Registro de progreso**](#RDP)
 
 <br>
@@ -62,6 +63,18 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 - [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones) : rama en la que se publicará el progreso presentable de cada día
 
 - [`master`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/master) : rama en la que se publicarán las versiones de la app presentables al público
+
+<br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+<br>
+
+## **Características secundarias a desarrollar** <a name="CCAD"></a>
+
+- [ ] Comprobar que el archivo descargado con las farmacias de guardia sea válido (que no tenga errores)
 
 <br>
 
