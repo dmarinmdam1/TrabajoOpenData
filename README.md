@@ -75,6 +75,8 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 ## **Características secundarias a desarrollar** <a name="CCAD"></a>
 
 - [ ] Comprobar que el archivo descargado con las farmacias de guardia sea válido (que no tenga errores)
+- [ ] Probar si se Markdown se procesa dentro de tablas (para dividir todo el registro de proceso en dos columnas)
+- [ ] Poner en el registro de progreso una tabla que enumere las semanas de trabajo y que cada semana contenga los días que la compone
 
 <br>
 
