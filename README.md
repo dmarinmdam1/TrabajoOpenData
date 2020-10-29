@@ -20,16 +20,29 @@
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
 [MASTER]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/master
 
+[APLICACION]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion
+[DOCESQ]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Documentacion%20Esquematica
+
+[BNB]: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
+
 <!-- ==================================================================================================== -->
 
 ## **Tabla de contenidos** <a name="TDC"></a>
 
+<br>
+
 - [**Tabla de contenidos**](#TDC) (meta)
+
 - [**Información preliminar sobre el propio** `README.md`](#IPSEPR) (meta)
-- [**Descripción de la aplicación**](#DDLA) (provisional)
-- [**Presentación con Documentación Esquemática**][PDE] (sin terminar)
+
+- [**Descripción de la aplicación**](#DDLA)
+
+- [**Presentación con Documentación Esquemática**][PDE] (link externo, no es un apartado del [`README.md`][README])
+
 - [**Descripción de las ramas**](#DDLR)
+
 - [**Características secundarias a desarrollar**](#CCAD)
+
 - [**Registro de progreso**](#RDP)
 
 <br>
@@ -54,13 +67,17 @@ Tanto la información contenida en este archivo como su disposición están suje
 
 <br>
 
-## **Descripción de la aplicación** _(provisional)_ <a name="DDLA"></a>
+## **Descripción de la aplicación** <a name="DDLA"></a>
 
-TL:DR; muestra representadas tanto en un mapa como en una lista las farmacias de guardia de Navarra.
+**La aplicación permite consultar las farmacias de guardia de Navarra que estén disponibles los próximos ~10 días.**
 
-La aplicación descarga la última versión del archivo con la información sobre las farmacias de guardia de Navarra (proveniente de los Datos Abiertos del Gobierno de Navarra) y lo utiliza para representarla tanto en un mapa (Google Maps) como en una lista.
+Al abrirse, comprueba si dispone de conexión a internet. De ser así, descarga la informaciónmás reciente sobre las farmacias de guardia. Si no, informa al usuario de cuántos días  en elfuturo puede consultar farmacias de guardia, determinados por la antigüedad de la informaciónactual (pudiendo estar tan desactualizada que no dispone de información para mostrar. En este caso, la aplicación se cerrará ya que no podría cumplir su función principal).
 
-Entre las numerosas características y opciones de esta app, encontramos la opción de utilizar tu ubicación actual, guardar farmacias favoritas, llamar u obtener direcciones desde la propia aplicación...
+Después se abrirá la pantalla del mapa en la que se mostrarán las farmacias de guardia cercanas a la ubicación del usuario. Si se selecciona una farmacia en el mapa, se mostrará la información completa de ésta. Si se prefiere visualizar la información en forma de lista, existe una pantalla que muestra de esta forma las farmacias de guardia, pudiendo filtrarlas de diferentes formas.
+
+Por último, con el fin de permitirle al usuario personalizar su experiencia con la app, existe una pantalla de configuración con distintas opciones a modificar e información acerca de la propia aplicación.
+
+Para navegar entre estas 3 pantallas principales, siempre visible en la parte inferior de la pantalla tendremos un [BottomNavigationBar][BNB].
 
 <br>
 
@@ -88,9 +105,9 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Características secundarias a desarrollar** <a name="CCAD"></a>
 
+- [X] Poner en el registro de progreso una tabla que enumere las semanas de trabajo y que cada semana contenga los días que la compone
 - [ ] Comprobar que el archivo descargado con las farmacias de guardia sea válido (que no tenga errores)
 - [ ] Probar si se Markdown se procesa dentro de tablas (para dividir todo el registro de proceso en dos columnas)
-- [ ] Poner en el registro de progreso una tabla que enumere las semanas de trabajo y que cada semana contenga los días que la compone
 
 <br>
 
@@ -101,11 +118,29 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 <br>
 
 ## **Registro de progreso** <a name="RDP"></a>
-| Cronológico                                               | Reciente                                                  |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| [Día 1 - (21/10/2020) - Primer commit](#D1)               | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
-| [Día 2 - (26/10/2020) - Punto de partida](#D2)            | [Día 2 - (26/10/2020) - Punto de partida](#D2)            |
-| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 1 - (21/10/2020) - Primer commit](#D1)               |
+
+<table>
+  <tr>
+    <th style="text-align:left">Semanas</th>
+    <th style="text-align:left" colspan=4>Días</th>
+  </tr>
+  <tr>
+    <td>Semana 1</td>
+    <td>Día 1</td>
+    <td>Día 2</td>
+    <td>Día 3</td>
+    <td>Día 4</td>
+  </tr>
+</table>
+
+<br>
+
+| Días (orden cronológico) | Días (recientes primero) |
+| - | - |
+| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
+| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
+| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
+| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |[Día 1 - (21/10/2020) - Primer commit](#D1)|
 
 <br>
 
@@ -113,7 +148,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 <!-- ==================================================================================================== -->
 
-## **Día 4** &nbsp; - &nbsp; (29/10/2020) &nbsp; - &nbsp; _Presentación con Documentación Esquemática_ <a name="D3"></a>
+## **Día 4** &nbsp; - &nbsp; (29/10/2020) &nbsp; - &nbsp; _Presentación con Documentación Esquemática_ <a name="D4"></a>
 
 - Mejorada _considerablemente_ la [Presentación con la Documentación Esquemática][PDE]
 
@@ -122,8 +157,10 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Organizado el repositorio en 2 carpetas (con la posibilidad de añadir más en el futuro si fuera necesario): 
 
-    - Aplicacion
-    - Documentacion Esquematica
+    - [`Aplicacion`][APLICACION] (en donde se ecuentra todo el código de la aplicación en si)
+    - [`Documentacion Esquematica`][DOCESQ] (en donde se guardan todos los archivos relacionados con la [Documentación Esquemática][PDE])
+
+- Mejorado _considerablemente también_ el archivo [`README.md`][README] para un mejor registro del progreso de este proyecto (meta)
 ---
 
 <!-- ==================================================================================================== -->
