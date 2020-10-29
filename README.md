@@ -119,16 +119,9 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 ## **Registro de progreso** <a name="RDP"></a>
 
-<br>
-
-| Semana 1 | [Día 1](#D1) | [Día 2](#D2) | [Día 3](#D3) | [Día 4](#D4) |
-| :- | :- | :- | :- | :- |
-
-
-<br>
-
 | Días (orden cronológico) | Días (recientes primero) |
 | :- | :- |
+| **----- Semana 1 -----**| **----- Semana 1 -----** |
 | [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
 | [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
 | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
