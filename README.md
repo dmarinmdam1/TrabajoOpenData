@@ -122,21 +122,18 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 <table>
   <tr>
     <th style="text-align:left">Semanas</th>
-    <th style="text-align:left" colspan=4>Días</th>
-  </tr>
-  <tr>
-    <td>Semana 1</td>
-    <td>Día 1</td>
-    <td>Día 2</td>
-    <td>Día 3</td>
-    <td>Día 4</td>
+    <th style="text-align:right" colspan=4>Días</th>
   </tr>
 </table>
+
+| Semana 1 | Días |  |  |  |
+| - | - | - | - | - |
+| Semana 1 | asdasd | asdsd | asdas | asdas |
 
 <br>
 
 | Días (orden cronológico) | Días (recientes primero) |
-| - | - |
+| :- | :- |
 | [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
 | [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
 | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
