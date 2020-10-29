@@ -9,12 +9,25 @@
 
 <!-- ==================================================================================================== -->
 
+<!-- ===== REFERENCIAS ===== -->
+
+[PDE]: https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing
+
+[README]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md
+[GITIGNORE]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/.gitignore
+
+[DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
+[VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
+[MASTER]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/master
+
+<!-- ==================================================================================================== -->
+
 ## **Tabla de contenidos** <a name="TDC"></a>
 
 - [**Tabla de contenidos**](#TDC) (meta)
 - [**Información preliminar sobre el propio** `README.md`](#IPSEPR) (meta)
 - [**Descripción de la aplicación**](#DDLA) (provisional)
-- [**Presentación con documentación esquemática**](https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing) (sin terminar)
+- [**Presentación con Documentación Esquemática**][PDE] (sin terminar)
 - [**Descripción de las ramas**](#DDLR)
 - [**Características secundarias a desarrollar**](#CCAD)
 - [**Registro de progreso**](#RDP)
@@ -59,11 +72,11 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Descripción de las ramas** <a name="DDLR"></a>
 
-- [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+- [`desarrollo`][DESARROLLO] : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-- [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones) : rama en la que se publicará el progreso presentable de cada día
+- [`versiones`][VERSIONES] : rama en la que se publicará el progreso presentable de cada día
 
-- [`master`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/master) : rama en la que se publicarán las versiones de la app presentables al público
+- [`master`][MASTER] : rama en la que se publicarán las versiones de la app presentables al público
 
 <br>
 
@@ -100,11 +113,26 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 <!-- ==================================================================================================== -->
 
+## **Día 4** &nbsp; - &nbsp; (29/10/2020) &nbsp; - &nbsp; _Presentación con Documentación Esquemática_ <a name="D3"></a>
+
+- Mejorada _considerablemente_ la [Presentación con la Documentación Esquemática][PDE]
+
+    - Creada a partir de esquemas de _draw.io_
+    - Guardados en el repositorio todos los archivos del desarrollo de esta presentación
+
+- Organizado el repositorio en 2 carpetas (con la posibilidad de añadir más en el futuro si fuera necesario): 
+
+    - Aplicacion
+    - Documentacion Esquematica
+---
+
+<!-- ==================================================================================================== -->
+
 ## **Día 3** &nbsp; - &nbsp; (27/10/2020) &nbsp; - &nbsp; _Pequeños retoques a la base_ <a name="D3"></a>
 
-- Mejorado el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md)
+- Mejorado el archivo [`README.md`][README]
 
-    - (el progreso del [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md) no será registrado en el [Registro de progreso](#RDP))
+    - (el progreso del [`README.md`][README] no será registrado en el [Registro de progreso](#RDP))
     - (ya me he dado cuenta de que es _`README.md`_ y no "_<code>README.m<b>e</b></code>_")
     - (a partir de ahora los mensajes de commit "`Actualizado el "README.md"`" estarán bien escritos)
 
@@ -114,23 +142,21 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 ## **Día 2** &nbsp; - &nbsp; (26/10/2020) &nbsp; - &nbsp; _Punto de partida_ <a name="D2"></a>
 
-- Creado y añadido al repositorio el archivo [`README.md`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md) en el que se registrará el progreso del proyecto
+- Creado y añadido al repositorio el archivo [`README.md`][README] en el que se registrará el progreso del proyecto
 
     - (¿no será esto Inception al hablar del "Registro de progreso" en el "Registro de progreso"?)
-
     - (¿no será esto Inception al hablar de hablar del "Registro de progreso" en el "Registro de progreso"?)
-
     - (¿no será esto ... ?)
 
-- Creadas las ramas [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) y [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones)
+- Creadas las ramas [`desarrollo`][DESARROLLO] y [`versiones`][VERSIONES]
 
-    - [`desarrollo`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo) : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
+    - [`desarrollo`][DESARROLLO] : rama a la que se subirá todo el progreso del proyecto sin importar su funcionalidad
 
-    - [`versiones`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones) : rama en la que se publicará el progreso presentable de cada día
+    - [`versiones`][VERSIONES] : rama en la que se publicará el progreso presentable de cada día
 
-    - [`master`](https://github.com/dmarinmdam1/TrabajoOpenData/tree/master) : rama en la que se publicarán las versiones de la app presentables al público
+    - [`master`][MASTER] : rama en la que se publicarán las versiones de la app presentables al público
 
-- Creada y terminada la [presentación con la documentación esquemática](https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing)
+- Creada y terminada la [Presentación con la Documentación Esquemática][PDE]
 
 ---
 
@@ -142,7 +168,7 @@ Entre las numerosas características y opciones de esta app, encontramos la opci
 
 - Configurado SourceTree para el control de versiones
 
-- Añadido al repositorio el archivo [`.gitignore`](https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/.gitignore) cuyo contenido he sacado de internet de una plantilla de flutter
+- Añadido al repositorio el archivo [`.gitignore`][GITIGNORE] cuyo contenido he sacado de internet de una plantilla de flutter
 
 ---
 
