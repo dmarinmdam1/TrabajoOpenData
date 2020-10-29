@@ -124,8 +124,8 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 | Semanas (orden cronológico) | Semanas (recientes primero) |
 | :- | :- |
 
-| Semana 1 | [Día 1](#D1) | [Día 2](#D2) | [Día 3](#D3) | [Día 4](#D4) |
-| :- | :- | :- | :- | :- |
+| Semana 1 | [Día 1](#D1) | [Día 2](#D2) | [Día 3](#D3) | [Día 4](#D4) | - | Semana 1 | [Día 4](#D4) | [Día 3](#D3) | [Día 2](#D2) | [Día 1](#D1) |
+| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
 
 
 <br>
