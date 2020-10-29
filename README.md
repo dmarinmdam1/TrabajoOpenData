@@ -121,7 +121,7 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 <br>
 
-| Días (orden cronológico) | Días (recientes primero) |
+| Orden cronológico | Recientes primero |
 | :- | :- |
 | **Semana 1**| **Semana 1** |
 | [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
