@@ -124,11 +124,14 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
     <th style="text-align:left">Semanas</th>
     <th style="text-align:right" colspan=4>Días</th>
   </tr>
+  <tr>
+    <td>Semana 1</td>
+    <td>Día 1</td>
+    <td>Día 2</td>
+    <td>Día 3</td>
+    <td>Día 4</td>
+  </tr>
 </table>
-
-| Semana 1 | Días |  |  |  |
-| - | - | - | - | - |
-| Semana 1 | asdasd | asdsd | asdas | asdas |
 
 <br>
 
