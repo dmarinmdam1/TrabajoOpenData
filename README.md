@@ -14,6 +14,7 @@
 - [**Tabla de contenidos**](#TDC) (meta)
 - [**Información preliminar sobre el propio** `README.md`](#IPSEPR) (meta)
 - [**Descripción de la aplicación**](#DDLA) (provisional)
+- [**Presentación con documentación esquemática**](https://docs.google.com/presentation/d/1ZGtemNMhVohsCC2PnnbQ7edXZn5R5n9pzkv9R-fOJ1k/edit?usp=sharing) (sin terminar)
 - [**Descripción de las ramas**](#DDLR)
 - [**Características secundarias a desarrollar**](#CCAD)
 - [**Registro de progreso**](#RDP)
