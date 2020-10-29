@@ -119,19 +119,14 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 ## **Registro de progreso** <a name="RDP"></a>
 
-<table>
-  <tr>
-    <th style="text-align:left">Semanas</th>
-    <th style="text-align:right" colspan=4>Días</th>
-  </tr>
-  <tr>
-    <td>Semana 1</td>
-    <td>Día 1</td>
-    <td>Día 2</td>
-    <td>Día 3</td>
-    <td>Día 4</td>
-  </tr>
-</table>
+<br>
+
+| Semanas (orden cronológico) | Semanas (recientes primero) |
+| :- | :- |
+
+| Semana 1 | [Día 1](#D1) | [Día 2](#D2) | [Día 3](#D3) | [Día 4](#D4) |
+| :- | :- | :- | :- | :- |
+
 
 <br>
 
