@@ -17,6 +17,12 @@
 [GITIGNORE]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/.gitignore
 [PUBSPEC]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/pubspec.yaml
 
+[ASSETS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/assets
+[MODELS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/models
+[PROVIDERS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/providers
+[SCREENS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/screens
+[FONTS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/assets/fonts
+
 [DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
 [MASTER]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/master
@@ -25,6 +31,9 @@
 [DOCESQ]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Documentacion%20Esquematica
 
 [BNB]: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
+
+[ROBOTO]: https://fonts.google.com/specimen/Roboto
+[ROBOTOMONO]: https://fonts.google.com/specimen/Roboto+Mono
 
 <!-- ==================================================================================================== -->
 
@@ -147,7 +156,22 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 - Avanzado en la aplicación
 
     - Organizado el archivo [`pubspec.yaml`][PUBSPEC]
-    - Creadas las carpetas [`models`][MODELS], [`providers`][PROVIDERS] Y [`screens`][SCREENS]
+
+    - Creadas las carpetas:
+
+        - [`assets`][ASSETS]
+        - [`lib/models`][MODELS]
+        - [`lib/providers`][PROVIDERS]
+        - [`lib/screens`][SCREENS]
+
+    - Añadida las fuente personalizadas [`Roboto`][ROBOTO] y [`RobotoMono`][ROBOTOMONO]
+
+        - Creada la carpeta [`assets/fonts`][FONTS]
+        - Metida en ella los archivos de las fuentes descargadas
+        - Actualizado el archivo [`pubspec.yaml`][PUBSPEC] para incluir las fuentes
+        - Configurada la fuente [`Roboto`][ROBOTO] como la fuente por defecto
+
+    - 
 
 ---
 
