@@ -27,6 +27,7 @@
 [MAPA]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/mapa.dart
 [AJUSTES]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/ajustes.dart
 [BARRANAVEGACION]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/barraNavegacion.dart
+[MAPAGOOGLE]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/models/mapaGoogle.dart
 
 [DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
@@ -169,7 +170,7 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
         - [`lib/providers`][PROVIDERS]
         - [`lib/screens`][SCREENS]
 
-    - Añadida las fuente personalizadas [`Roboto`][ROBOTO] y [`RobotoMono`][ROBOTOMONO]
+    - Añadidas las fuentes personalizadas [`Roboto`][ROBOTO] y [`RobotoMono`][ROBOTOMONO]
 
         - Creada la carpeta [`assets/fonts`][FONTS]
         - Metida en ella los archivos de las fuentes descargadas
@@ -185,6 +186,10 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
     - Creado el Widget de navegación ([BottomNavigationBar][BNB])
 
         - [`barraNavegacion`][BARRANAVEGACION]
+
+    - Creado el modelo de Widget de Google Maps:
+
+        - [`mapaGoogle`][MAPAGOOGLE] (sin terminar y con propiedades de prueba)
 
 ---
 
