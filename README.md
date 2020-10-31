@@ -15,6 +15,7 @@
 
 [README]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/README.md
 [GITIGNORE]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/.gitignore
+[PUBSPEC]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/pubspec.yaml
 
 [DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
@@ -141,7 +142,12 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 - Actualizado el archivo [`README.md`][README]
 
-- 
+- Creada la aplicación base
+
+- Avanzado en la aplicación
+
+    - Organizado el archivo [`pubspec.yaml`][PUBSPEC]
+    - Creadas las carpetas [`models`][MODELS], [`providers`][PROVIDERS] Y [`screens`][SCREENS]
 
 ---
 

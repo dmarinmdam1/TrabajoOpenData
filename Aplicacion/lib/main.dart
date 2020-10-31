@@ -1,3 +1,4 @@
+import 'package:aplicacion/providers/dataProvider.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,10 +43,22 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: Center(
-        child: Text(
-          "Base",
+        child: ListView(
+          children: _base(DataProvider.contenidoBase()),
         ),
       ),
     );
+  }
+
+  List<Widget> _base(List<String> contenidoBase) {
+    List<Widget> retorno = new List<Widget>();
+    contenidoBase.forEach((element) {
+      final tile = new ListTile(
+        title: Center(child: Text(element)),
+      );
+      retorno.add(tile);
+      retorno.add(Divider());
+    });
+    return retorno;
   }
 }
