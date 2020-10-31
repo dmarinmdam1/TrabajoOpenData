@@ -123,13 +123,25 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 | Orden cronológico | Recientes primero |
 | :- | :- |
-| **Semana 1**| **Semana 1** |
-| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
-| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
-| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
-| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |[Día 1 - (21/10/2020) - Primer commit](#D1)|
+| **Semana 1** | **Semana 2** |
+| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | |
+| [Día 2 - (26/10/2020) - Punto de partida](#D2) | **Semana 1** |
+| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
+| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
+| **Semana 2** | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
+| [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | [Día 1 - (21/10/2020) - Primer commit](#D1) |
 
 <br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+## **Día 5** &nbsp; - &nbsp; (31/10/2020) &nbsp; - &nbsp; _Empezamos con la App en sí_ <a name="D5"></a>
+
+- Actualizado el archivo [`README.md`][README]
+
+- 
 
 ---
 
@@ -148,6 +160,7 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
     - [`Documentacion Esquematica`][DOCESQ] (en donde se guardan todos los archivos relacionados con la [Documentación Esquemática][PDE])
 
 - Mejorado _considerablemente también_ el archivo [`README.md`][README] para un mejor registro del progreso de este proyecto (meta)
+
 ---
 
 <!-- ==================================================================================================== -->
