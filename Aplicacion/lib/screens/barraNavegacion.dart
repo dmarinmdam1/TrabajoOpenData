@@ -4,15 +4,13 @@ import 'package:aplicacion/screens/lista.dart';
 import 'package:aplicacion/screens/mapa.dart';
 import 'package:aplicacion/screens/ajustes.dart';
 
-import 'package:aplicacion/screens/googleMap.dart';
-
 class Navegacion extends StatefulWidget {
   @override
   _NavegacionState createState() => _NavegacionState();
 }
 
 class _NavegacionState extends State<Navegacion> {
-  int _pantallaActual = 0;
+  int _pantallaActual = 1; // Mapa
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +37,7 @@ class _NavegacionState extends State<Navegacion> {
             child: TickerMode(
               enabled: _pantallaActual == 1,
               child: MaterialApp(
-                home: MapSample(), //Mapa(),
+                home: Mapa(),
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   primarySwatch: Colors.blue,

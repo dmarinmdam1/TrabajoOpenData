@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../models/mapaGoogle.dart';
+
 class Mapa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,11 +14,7 @@ class Mapa extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Text(
-          "Mapa",
-        ),
-      ),
+      body: MapaGoogle(),
     );
   }
 }
