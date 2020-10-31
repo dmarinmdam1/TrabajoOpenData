@@ -23,6 +23,11 @@
 [SCREENS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/screens
 [FONTS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/assets/fonts
 
+[LISTA]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/lista.dart
+[MAPA]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/mapa.dart
+[AJUSTES]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/ajustes.dart
+[BARRANAVEGACION]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/barraNavegacion.dart
+
 [DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
 [MASTER]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/master
@@ -171,7 +176,15 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
         - Actualizado el archivo [`pubspec.yaml`][PUBSPEC] para incluir las fuentes
         - Configurada la fuente [`Roboto`][ROBOTO] como la fuente por defecto
 
-    - 
+    - Creadas las pantallas principales:
+
+        - [`lista`][LISTA] (de momento vacía)
+        - [`mapa`][MAPA] (con un mapa de Google funcionando)
+        - [`ajustes`][AJUSTES] (de momento vacía)
+
+    - Creado el Widget de navegación ([BottomNavigationBar][BNB])
+
+        - [`barraNavegacion`][BARRANAVEGACION]
 
 ---
 
