@@ -153,6 +153,16 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 <!-- ==================================================================================================== -->
 
+## **Día 6** &nbsp; - &nbsp; (01/11/2020) &nbsp; - &nbsp; _Avanzando un domingo_ <a name="D5"></a>
+
+- Actualizado el archivo [`README.md`][README]
+
+- 
+
+---
+
+<!-- ==================================================================================================== -->
+
 ## **Día 5** &nbsp; - &nbsp; (31/10/2020) &nbsp; - &nbsp; _Empezamos con la App en sí_ <a name="D5"></a>
 
 - Actualizado el archivo [`README.md`][README]
