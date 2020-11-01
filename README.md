@@ -18,6 +18,7 @@
 [PUBSPEC]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/pubspec.yaml
 
 [ASSETS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/assets
+[DATA]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/data
 [MODELS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/models
 [PROVIDERS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/providers
 [SCREENS]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Aplicacion/lib/screens
@@ -28,6 +29,9 @@
 [AJUSTES]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/ajustes.dart
 [BARRANAVEGACION]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/screens/barraNavegacion.dart
 [MAPAGOOGLE]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/models/mapaGoogle.dart
+[FDGDART]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/lib/models/farmaciaDeGuardia.dart
+
+[FDGJSON]: https://github.com/dmarinmdam1/TrabajoOpenData/blob/versiones/Aplicacion/data/farmaciasDeGuardia.json
 
 [DESARROLLO]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/desarrollo
 [VERSIONES]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones
@@ -140,12 +144,13 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 | Orden cronológico | Recientes primero |
 | :- | :- |
 | **Semana 1** | **Semana 2** |
-| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | |
-| [Día 2 - (26/10/2020) - Punto de partida](#D2) | **Semana 1** |
-| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
-| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
-| **Semana 2** | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
-| [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | [Día 1 - (21/10/2020) - Primer commit](#D1) |
+| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) |
+| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) |
+| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | **Semana 1** |
+| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
+| **Semana 2** | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
+| [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
+| [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) | [Día 1 - (21/10/2020) - Primer commit](#D1) |
 
 <br>
 
@@ -153,11 +158,16 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
 <!-- ==================================================================================================== -->
 
-## **Día 6** &nbsp; - &nbsp; (01/11/2020) &nbsp; - &nbsp; _Avanzando un domingo_ <a name="D5"></a>
+## **Día 6** &nbsp; - &nbsp; (01/11/2020) &nbsp; - &nbsp; _Avanzando (un poquito) en domingo_ <a name="D6"></a>
 
 - Actualizado el archivo [`README.md`][README]
 
-- 
+- Añadido el archivo local [`farmaciasDeGuardia.json`][FDGJSON] para la realización de pruebas
+
+    - Metido en la carpeta [`data`][DATA]
+    - Actualizado el archivo [`pubspec.yaml`][PUBSPEC] para incluirlo
+
+- Creado el modelo [`farmaciaDeGuardia.dart`][FDGDART] con la página app.quicktype.io
 
 ---
 
@@ -189,17 +199,17 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 
     - Creadas las pantallas principales:
 
-        - [`lista`][LISTA] (de momento vacía)
-        - [`mapa`][MAPA] (con un mapa de Google funcionando)
-        - [`ajustes`][AJUSTES] (de momento vacía)
+        - [`lista.dart`][LISTA] (de momento vacía)
+        - [`mapadart`][MAPA] (con un mapa de Google funcionando)
+        - [`ajustesdart`][AJUSTES] (de momento vacía)
 
     - Creado el Widget de navegación ([BottomNavigationBar][BNB])
 
-        - [`barraNavegacion`][BARRANAVEGACION]
+        - [`barraNavegaciondart`][BARRANAVEGACION]
 
     - Creado el modelo de Widget de Google Maps:
 
-        - [`mapaGoogle`][MAPAGOOGLE] (sin terminar y con propiedades de prueba)
+        - [`mapaGoogledart`][MAPAGOOGLE] (sin terminar y con propiedades de prueba)
 
 ---
 
