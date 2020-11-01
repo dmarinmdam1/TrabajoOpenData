@@ -167,7 +167,7 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
     - Metido en la carpeta [`data`][DATA]
     - Actualizado el archivo [`pubspec.yaml`][PUBSPEC] para incluirlo
 
-- Creado el modelo [`farmaciaDeGuardia.dart`][FDGDART] con la página app.quicktype.io
+- Creado el modelo [`farmaciaDeGuardia.dart`][FDGDART] con la página [`app.quicktype.io`](app.quicktype.io)
 
 ---
 
