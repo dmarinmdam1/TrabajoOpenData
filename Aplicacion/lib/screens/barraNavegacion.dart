@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'package:aplicacion/screens/lista.dart';
 import 'package:aplicacion/screens/mapa.dart';
@@ -10,10 +11,16 @@ class Navegacion extends StatefulWidget {
 }
 
 class _NavegacionState extends State<Navegacion> {
+  Map<String, Object> args = new Map<String, Object>();
+
   int _pantallaActual = 1; // Mapa
+  int _prePantallaActual = 1;
 
   @override
   Widget build(BuildContext context) {
+    args = Get.arguments ?? new Map<String, Object>();
+    // hacer if raro para settear "_pantallaActual" y
+    // comprobar si es distinto a "_prePantallaActual"
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -79,10 +86,6 @@ class _NavegacionState extends State<Navegacion> {
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on),
             title: Text("Mapa"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            title: Text("Ajustes"),
           ),
         ],
         backgroundColor: Colors.blue,

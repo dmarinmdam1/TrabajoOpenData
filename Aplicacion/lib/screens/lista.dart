@@ -1,8 +1,19 @@
+import 'package:aplicacion/screens/ajustes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Lista extends StatelessWidget {
+class Lista extends StatefulWidget {
+  @override
+  _ListaState createState() => _ListaState();
+}
+
+class _ListaState extends State<Lista> {
+  Map<String, Object> args = new Map<String, Object>();
+
   @override
   Widget build(BuildContext context) {
+    args = Get.arguments ?? new Map<String, Object>();
+
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -11,6 +22,20 @@ class Lista extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
+        actions: <Widget>[
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {
+                  args["desdePantalla"] = "lista";
+                  Get.offAll(Ajustes(), arguments: args);
+                },
+                child: Icon(
+                  Icons.settings,
+                  size: 26.0,
+                ),
+              )),
+        ],
       ),
       body: Center(
         child: Text(
