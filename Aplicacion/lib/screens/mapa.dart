@@ -1,8 +1,8 @@
-import 'package:aplicacion/screens/ajustes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../models/mapaGoogle.dart';
+import 'package:aplicacion/models/mapaGoogle.dart';
+import 'package:aplicacion/screens/ajustes.dart';
 
 class Mapa extends StatefulWidget {
   @override
@@ -32,7 +32,8 @@ class _MapaState extends State<Mapa> {
               child: GestureDetector(
                 onTap: () {
                   args["desdePantalla"] = Mapa.nombre;
-                  //args["ultimoPunto"] =
+                  args["ultimoPunto"] = MapaGoogle.getCurrentLocation();
+                  args["ultimoZoom"] = MapaGoogle.getCurrentZoom();
                   Get.offAll(Ajustes(), arguments: args);
                 },
                 child: Icon(

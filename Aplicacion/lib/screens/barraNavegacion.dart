@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:aplicacion/screens/lista.dart';
 import 'package:aplicacion/screens/mapa.dart';
 import 'package:aplicacion/screens/ajustes.dart';
+import 'package:aplicacion/models/mapaGoogle.dart';
 
 class Navegacion extends StatefulWidget {
   @override
@@ -24,7 +25,11 @@ class _NavegacionState extends State<Navegacion> {
     if (args["desdePantalla"] != _pantallaAnterior) {
       if (args["desdePantalla"] == "lista" /*Lista.nombre*/)
         _pantallaActual = 0;
-      else if (args["desdePantalla"] == "mapa" /*Mapa.nombre*/) _pantallaActual = 1;
+      else if (args["desdePantalla"] == "mapa" /*Mapa.nombre*/) {
+        _pantallaActual = 1;
+        // MapaGoogle.setCurrentLocation(args["ultimoPunto"]);
+        // MapaGoogle.setCurrentZoom(args["ultimoZoom"]);
+      }
       _pantallaAnterior = args["desdePantalla"];
     }
     return Scaffold(
