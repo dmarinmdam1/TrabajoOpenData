@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 class Lista extends StatefulWidget {
   @override
   _ListaState createState() => _ListaState();
+
+  static final String nombre = "lista";
 }
 
 class _ListaState extends State<Lista> {
@@ -27,7 +29,7 @@ class _ListaState extends State<Lista> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  args["desdePantalla"] = "lista";
+                  args["desdePantalla"] = Lista.nombre;
                   Get.offAll(Ajustes(), arguments: args);
                 },
                 child: Icon(

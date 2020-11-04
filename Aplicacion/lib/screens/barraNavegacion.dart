@@ -14,13 +14,19 @@ class _NavegacionState extends State<Navegacion> {
   Map<String, Object> args = new Map<String, Object>();
 
   int _pantallaActual = 1; // Mapa
-  int _prePantallaActual = 1;
+  String _pantallaAnterior = "mapa";
+
+  Lista pantallaLista = new Lista();
 
   @override
   Widget build(BuildContext context) {
     args = Get.arguments ?? new Map<String, Object>();
-    // hacer if raro para settear "_pantallaActual" y
-    // comprobar si es distinto a "_prePantallaActual"
+    if (args["desdePantalla"] != _pantallaAnterior) {
+      if (args["desdePantalla"] == "lista" /*Lista.nombre*/)
+        _pantallaActual = 0;
+      else if (args["desdePantalla"] == "mapa" /*Mapa.nombre*/) _pantallaActual = 1;
+      _pantallaAnterior = args["desdePantalla"];
+    }
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -29,7 +35,7 @@ class _NavegacionState extends State<Navegacion> {
             child: TickerMode(
               enabled: _pantallaActual == 0,
               child: MaterialApp(
-                home: Lista(),
+                home: pantallaLista,
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   primarySwatch: Colors.blue,

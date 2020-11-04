@@ -7,6 +7,8 @@ import '../models/mapaGoogle.dart';
 class Mapa extends StatefulWidget {
   @override
   _MapaState createState() => _MapaState();
+
+  static final String nombre = "mapa";
 }
 
 class _MapaState extends State<Mapa> {
@@ -29,7 +31,8 @@ class _MapaState extends State<Mapa> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  args["desdePantalla"] = "mapa";
+                  args["desdePantalla"] = Mapa.nombre;
+                  //args["ultimoPunto"] =
                   Get.offAll(Ajustes(), arguments: args);
                 },
                 child: Icon(
