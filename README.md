@@ -41,6 +41,8 @@
 [DOCESQ]: https://github.com/dmarinmdam1/TrabajoOpenData/tree/versiones/Documentacion%20Esquematica
 
 [BNB]: https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html
+[GET]: https://pub.dev/packages/get
+[APPBAR]: https://api.flutter.dev/flutter/material/AppBar-class.html
 
 [ROBOTO]: https://fonts.google.com/specimen/Roboto
 [ROBOTOMONO]: https://fonts.google.com/specimen/Roboto+Mono
@@ -144,15 +146,31 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
 | Orden cronológico | Recientes primero |
 | :- | :- |
 | **Semana 1** | **Semana 2** |
-| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) |
-| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) |
-| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | **Semana 1** |
-| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
-| **Semana 2** | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
-| [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
-| [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) | [Día 1 - (21/10/2020) - Primer commit](#D1) |
+| [Día 1 - (21/10/2020) - Primer commit](#D1) | [Día 7 - (05/11/2020) - Trabajo en clase](#D7) |
+| [Día 2 - (26/10/2020) - Punto de partida](#D2) | [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) |
+| [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) | [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) |
+| [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) | **Semana 1** |
+| **Semana 2** | [Día 4 - (29/10/2020) - Presentación con Documentación Esquemática](#D4) |
+| [Día 5 - (31/10/2020) - Empezamos con la App en sí](#D5) | [Día 3 - (27/10/2020) - Pequeños retoques a la base](#D3) |
+| [Día 6 - (01/11/2020) - Avanzando (un poquito) en domingo](#D6) | [Día 2 - (26/10/2020) - Punto de partida](#D2) |
+| [Día 7 - (05/11/2020) - Trabajo en clase](#D7) | [Día 1 - (21/10/2020) - Primer commit](#D1) |
 
 <br>
+
+---
+
+<!-- ==================================================================================================== -->
+
+## **Día 7** &nbsp; - &nbsp; (05/11/2020) &nbsp; - &nbsp; _Trabajo en clase_ <a name="D7"></a>
+
+- Actualizado el archivo [`README.md`][README]
+
+- Avanzado _considerablemente_ en la navegación entre pantallas utilizando:
+
+    - la [`barraNavegacion`][BARRANAVEGACION] y
+    - el paquete [`get`][GET]
+
+- Quitada la pantalla [`ajustes`][AJUSTES] de la [`barraNavegacion`][BARRANAVEGACION] y puesta como un botón (action) en el [`appbar`][APPBAR] de las pantallas [`lista`][LISTA] y [`mapa`][MAPA]
 
 ---
 
@@ -200,16 +218,16 @@ Para navegar entre estas 3 pantallas principales, siempre visible en la parte in
     - Creadas las pantallas principales:
 
         - [`lista.dart`][LISTA] (de momento vacía)
-        - [`mapadart`][MAPA] (con un mapa de Google funcionando)
-        - [`ajustesdart`][AJUSTES] (de momento vacía)
+        - [`mapa.dart`][MAPA] (con un mapa de Google funcionando)
+        - [`ajustes.dart`][AJUSTES] (de momento vacía)
 
     - Creado el Widget de navegación ([BottomNavigationBar][BNB])
 
-        - [`barraNavegaciondart`][BARRANAVEGACION]
+        - [`barraNavegacion.dart`][BARRANAVEGACION]
 
     - Creado el modelo de Widget de Google Maps:
 
-        - [`mapaGoogledart`][MAPAGOOGLE] (sin terminar y con propiedades de prueba)
+        - [`mapaGoogle.dart`][MAPAGOOGLE] (sin terminar y con propiedades de prueba)
 
 ---
 
