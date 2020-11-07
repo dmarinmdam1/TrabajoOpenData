@@ -1,6 +1,7 @@
-import 'package:aplicacion/screens/barraNavegacion.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'package:aplicacion/screens/barraNavegacion.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Navegacion(),
+      home: BarraNavegacion(),
+      theme: ThemeData(
+        fontFamily: "Roboto",
+      ),
     );
   }
 }

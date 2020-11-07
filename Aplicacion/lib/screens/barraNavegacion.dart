@@ -1,37 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'package:aplicacion/screens/lista.dart';
 import 'package:aplicacion/screens/mapa.dart';
 import 'package:aplicacion/screens/ajustes.dart';
-import 'package:aplicacion/models/mapaGoogle.dart';
 
-class Navegacion extends StatefulWidget {
+class BarraNavegacion extends StatefulWidget {
   @override
-  _NavegacionState createState() => _NavegacionState();
+  _BarraNavegacionState createState() => _BarraNavegacionState();
+
+  void cambiarPantalla(int nuevaPantalla) {
+    _BarraNavegacionState().cambiarPantalla(nuevaPantalla);
+  }
 }
 
-class _NavegacionState extends State<Navegacion> {
-  Map<String, Object> args = new Map<String, Object>();
+class _BarraNavegacionState extends State<BarraNavegacion> {
+  // Map<String, Object> args = new Map<String, Object>();
 
   int _pantallaActual = 1; // Mapa
-  String _pantallaAnterior = "mapa";
 
-  Lista pantallaLista = new Lista();
+  void cambiarPantalla(int nuevaPantalla) {
+    setState(() {
+      _pantallaActual = nuevaPantalla;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    args = Get.arguments ?? new Map<String, Object>();
-    if (args["desdePantalla"] != _pantallaAnterior) {
-      if (args["desdePantalla"] == "lista" /*Lista.nombre*/)
-        _pantallaActual = 0;
-      else if (args["desdePantalla"] == "mapa" /*Mapa.nombre*/) {
-        _pantallaActual = 1;
-        // MapaGoogle.setCurrentLocation(args["ultimoPunto"]);
-        // MapaGoogle.setCurrentZoom(args["ultimoZoom"]);
-      }
-      _pantallaAnterior = args["desdePantalla"];
-    }
+    // args = Get.arguments ?? new Map<String, Object>();
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -40,7 +35,7 @@ class _NavegacionState extends State<Navegacion> {
             child: TickerMode(
               enabled: _pantallaActual == 0,
               child: MaterialApp(
-                home: pantallaLista,
+                home: Lista(),
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
                   primarySwatch: Colors.blue,
@@ -85,9 +80,7 @@ class _NavegacionState extends State<Navegacion> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _pantallaActual,
         onTap: (int nuevaPantalla) {
-          setState(() {
-            this._pantallaActual = nuevaPantalla;
-          });
+          cambiarPantalla(nuevaPantalla);
         },
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
