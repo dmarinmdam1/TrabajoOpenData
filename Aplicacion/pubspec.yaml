@@ -25,6 +25,7 @@ dependencies:
   get:
   get_storage:
   google_maps_flutter:
+  intl: ^0.16.1
 
   cupertino_icons: ^0.1.3
 

@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 
+import 'package:aplicacion/main.dart';
 import 'package:aplicacion/screens/lista.dart';
 import 'package:aplicacion/screens/mapa.dart';
-import 'package:aplicacion/screens/ajustes.dart';
 
 class BarraNavegacion extends StatefulWidget {
   @override
@@ -38,7 +38,7 @@ class _BarraNavegacionState extends State<BarraNavegacion> {
                 home: Lista(),
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
-                  primarySwatch: Colors.blue,
+                  primarySwatch: Colors.green,
                   fontFamily: "Roboto",
                   visualDensity: VisualDensity.adaptivePlatformDensity,
                 ),
@@ -53,22 +53,7 @@ class _BarraNavegacionState extends State<BarraNavegacion> {
                 home: Mapa(),
                 debugShowCheckedModeBanner: false,
                 theme: ThemeData(
-                  primarySwatch: Colors.blue,
-                  fontFamily: "Roboto",
-                  visualDensity: VisualDensity.adaptivePlatformDensity,
-                ),
-              ),
-            ),
-          ),
-          Offstage(
-            offstage: _pantallaActual != 2,
-            child: TickerMode(
-              enabled: _pantallaActual == 2,
-              child: MaterialApp(
-                home: Ajustes(),
-                debugShowCheckedModeBanner: false,
-                theme: ThemeData(
-                  primarySwatch: Colors.blue,
+                  primarySwatch: Colors.green,
                   fontFamily: "Roboto",
                   visualDensity: VisualDensity.adaptivePlatformDensity,
                 ),
@@ -78,6 +63,7 @@ class _BarraNavegacionState extends State<BarraNavegacion> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        key: keyBarraNavegacion,
         currentIndex: _pantallaActual,
         onTap: (int nuevaPantalla) {
           cambiarPantalla(nuevaPantalla);
@@ -92,10 +78,10 @@ class _BarraNavegacionState extends State<BarraNavegacion> {
             title: Text("Mapa"),
           ),
         ],
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         unselectedItemColor: Colors.white,
-        selectedItemColor: Colors.yellow,
+        selectedItemColor: Colors.black,
       ),
     );
   }
-}
+}*/

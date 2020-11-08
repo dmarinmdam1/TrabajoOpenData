@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class Ajustes extends StatefulWidget {
   @override
@@ -11,14 +10,6 @@ class _AjustesState extends State<Ajustes> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: GestureDetector(
-          onTap: () {
-            Get.back();
-          },
-          child: Icon(
-            Icons.arrow_back, // add custom icons also
-          ),
-        ),
         title: Center(
           child: Text(
             "Ajustes",

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'package:aplicacion/models/drawer.dart';
 import 'package:aplicacion/models/mapaGoogle.dart';
 import 'package:aplicacion/screens/ajustes.dart';
 
@@ -13,6 +14,7 @@ class _MapaState extends State<Mapa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: DrawerWidget(),
       appBar: AppBar(
         title: Center(
           child: Text(
