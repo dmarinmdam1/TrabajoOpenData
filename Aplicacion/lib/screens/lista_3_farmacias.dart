@@ -1,3 +1,4 @@
+import 'package:aplicacion/models/mapaGoogle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -5,6 +6,8 @@ import 'package:aplicacion/models/farmaciaDeGuardia.dart';
 import 'package:aplicacion/screens/mapa.dart';
 import 'package:aplicacion/providers/dataProvider.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class Lista3Farmacias extends StatefulWidget {
   @override
@@ -57,10 +60,11 @@ class _Lista3FarmaciasState extends State<Lista3Farmacias> {
     ));
     farmaciasFiltradas.forEach((farmacia) {
       final elementoLista = GestureDetector(
-        onTap: () {
-          // punto en el mapa como argumento
-          // guardar en storage este punto como último
+        onTap: () async {
+          //List<Location> coordenadas = await locationFromAddress(farmacia.direccin);
+          //GetStorage().write("ultimasCoordenadas", coordenadas.first);
           args["fromLista"] = true;
+          await MapaGoogle.setCurrentLocationAndZoom(LatLng(42.825541, -1.632107 /*coordenadas.first.latitude, coordenadas.first.longitude*/), 16.0);
           Get.to(Mapa(), arguments: args);
         },
         child: Container(
