@@ -1,51 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:aplicacion/models/drawer.dart';
-import 'package:aplicacion/screens/mapa.dart';
-import 'package:aplicacion/screens/ajustes.dart';
-import 'package:aplicacion/providers/dataProvider.dart';
 import 'package:aplicacion/models/farmaciaDeGuardia.dart';
+import 'package:aplicacion/screens/mapa.dart';
+import 'package:aplicacion/providers/dataProvider.dart';
+import 'package:get_storage/get_storage.dart';
 
-class Lista extends StatefulWidget {
+class Lista3Farmacias extends StatefulWidget {
   @override
-  _ListaState createState() => _ListaState();
+  _Lista3FarmaciasState createState() => _Lista3FarmaciasState();
 }
 
-class _ListaState extends State<Lista> {
+class _Lista3FarmaciasState extends State<Lista3Farmacias> {
+  Map<String, Object> args = new Map<String, Object>();
   @override
   Widget build(BuildContext context) {
+    args = Get.arguments ?? new Map<String, Object>();
     return Scaffold(
-      drawer: DrawerWidget(),
       appBar: AppBar(
         title: Center(
           child: Text(
-            "Lista",
+            "Seleccione una Farmacia",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
-        actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: GestureDetector(
-              onTap: () {
-                Get.to(Ajustes());
-              },
-              child: Icon(
-                Icons.settings,
-                size: 26.0,
-              ),
-            ),
-          ),
-        ],
       ),
-      body: _cargandoElementosLista(),
+      body: _cargandoElementosLista(args["grupo"], args["localidad"]),
     );
   }
 
-  Widget _cargandoElementosLista() {
+  Widget _cargandoElementosLista(String grupo, String localidad) {
     return FutureBuilder(
-      future: DataProvider.cargarFarmaciasHoy(),
+      future: DataProvider.getFarmaciasFiltradas(grupo, localidad),
       initialData: [],
       builder: (context, AsyncSnapshot<List<dynamic>> snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
@@ -59,7 +45,7 @@ class _ListaState extends State<Lista> {
     );
   }
 
-  List<Widget> _elementosLista(List<FarmaciaDeGuardia> data) {
+  List<Widget> _elementosLista(List<FarmaciaDeGuardia> farmaciasFiltradas) {
     final List<Widget> retorno = [];
     retorno.add(SizedBox(
       height: 2.0,
@@ -69,10 +55,13 @@ class _ListaState extends State<Lista> {
       thickness: 2,
       height: 0,
     ));
-    data.forEach((element) {
+    farmaciasFiltradas.forEach((farmacia) {
       final elementoLista = GestureDetector(
         onTap: () {
-          Get.to(Mapa());
+          // punto en el mapa como argumento
+          // guardar en storage este punto como último
+          args["fromLista"] = true;
+          Get.to(Mapa(), arguments: args);
         },
         child: Container(
           color: Color.fromRGBO(255, 255, 255, 1),
@@ -83,8 +72,8 @@ class _ListaState extends State<Lista> {
                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 12.0),
                 child: Text.rich(
                   TextSpan(children: <TextSpan>[
-                    TextSpan(text: element.farmacia.substring(element.farmacia.indexOf(",") + 2), style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
-                    TextSpan(text: " " + element.farmacia.substring(0, element.farmacia.indexOf(",")), style: TextStyle(fontSize: 20.0)),
+                    TextSpan(text: farmacia.farmacia.substring(farmacia.farmacia.indexOf(",") + 2), style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold)),
+                    TextSpan(text: " " + farmacia.farmacia.substring(0, farmacia.farmacia.indexOf(",")), style: TextStyle(fontSize: 20.0)),
                   ]),
                 ),
               ),
@@ -93,7 +82,7 @@ class _ListaState extends State<Lista> {
                 child: Text.rich(
                   TextSpan(children: <TextSpan>[
                     TextSpan(text: "Grupo: ", style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(text: element.grupo),
+                    TextSpan(text: farmacia.grupo),
                   ]),
                 ),
               ),
@@ -102,7 +91,7 @@ class _ListaState extends State<Lista> {
                 child: Text.rich(
                   TextSpan(children: <TextSpan>[
                     TextSpan(text: "Localidad: ", style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(text: element.localidad),
+                    TextSpan(text: farmacia.localidad),
                   ]),
                 ),
               ),
@@ -111,7 +100,7 @@ class _ListaState extends State<Lista> {
                 child: Text.rich(
                   TextSpan(children: <TextSpan>[
                     TextSpan(text: "Dirección: ", style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(text: element.direccin),
+                    TextSpan(text: farmacia.direccin),
                   ]),
                 ),
               ),
@@ -121,7 +110,7 @@ class _ListaState extends State<Lista> {
                   TextSpan(children: <TextSpan>[
                     TextSpan(text: "Horario: ", style: TextStyle(fontWeight: FontWeight.bold)),
                     //TextSpan(text: element.desde.toString() + ":00 - " + element.hasta.toString() + ":00"),
-                    TextSpan(text: (element.desde == element.hasta) ? "24h desde las " + element.desde.toString() + ":00" : element.desde.toString() + ":00 - " + element.hasta.toString() + ":00"),
+                    TextSpan(text: (farmacia.desde == farmacia.hasta) ? "24h desde las " + farmacia.desde.toString() + ":00" : farmacia.desde.toString() + ":00 - " + farmacia.hasta.toString() + ":00"),
                   ]),
                 ),
               ),
@@ -130,7 +119,7 @@ class _ListaState extends State<Lista> {
                 child: Text.rich(
                   TextSpan(children: <TextSpan>[
                     TextSpan(text: "Teléfono: ", style: TextStyle(fontWeight: FontWeight.bold)),
-                    TextSpan(text: element.telfono),
+                    TextSpan(text: farmacia.telfono),
                   ]),
                 ),
               ),

@@ -11,10 +11,12 @@ class Mapa extends StatefulWidget {
 }
 
 class _MapaState extends State<Mapa> {
+  Map<String, Object> args = new Map<String, Object>();
   @override
   Widget build(BuildContext context) {
+    args = Get.arguments ?? new Map<String, Object>();
     return Scaffold(
-      drawer: DrawerWidget(),
+      drawer: args["fromLista"] == true ? null : DrawerWidget(),
       appBar: AppBar(
         title: Center(
           child: Text(
@@ -22,20 +24,22 @@ class _MapaState extends State<Mapa> {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
-        actions: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: GestureDetector(
-              onTap: () {
-                Get.to(Ajustes());
-              },
-              child: Icon(
-                Icons.settings,
-                size: 26.0,
-              ),
-            ),
-          ),
-        ],
+        actions: args["fromLista"] == true
+            ? null
+            : <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(right: 20.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Get.to(Ajustes());
+                    },
+                    child: Icon(
+                      Icons.settings,
+                      size: 26.0,
+                    ),
+                  ),
+                ),
+              ],
       ),
       body: MapaGoogle(),
     );

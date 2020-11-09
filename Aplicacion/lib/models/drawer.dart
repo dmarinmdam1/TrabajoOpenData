@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:aplicacion/screens/lista.dart';
+import 'package:aplicacion/screens/lista_1_grupos.dart';
 import 'package:aplicacion/screens/mapa.dart';
 import 'package:aplicacion/screens/ajustes.dart';
 
@@ -53,7 +53,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
           size: 30,
         ),
         onTap: () {
-          Get.offAll(Lista());
+          Get.offAll(Lista1Grupos());
         },
       ),
     );
@@ -71,6 +71,23 @@ class _DrawerWidgetState extends State<DrawerWidget> {
         ),
         onTap: () {
           Get.offAll(Mapa());
+        },
+      ),
+    );
+
+    retorno.add(
+      new ListTile(
+        title: Text(
+          "Ajustes",
+          style: TextStyle(fontSize: 20),
+        ),
+        leading: const Icon(
+          Icons.settings,
+          color: Colors.black,
+          size: 30,
+        ),
+        onTap: () {
+          Get.to(Ajustes());
         },
       ),
     );

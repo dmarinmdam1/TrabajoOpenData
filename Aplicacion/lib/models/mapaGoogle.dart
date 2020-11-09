@@ -54,11 +54,11 @@ class _MapaGoogleState extends State<MapaGoogle> {
   Widget build(BuildContext context) {
     return GoogleMap(
       onMapCreated: (GoogleMapController controller) {
-        _controller.complete(controller);
+        if (!_controller.isCompleted) _controller.complete(controller);
       },
       mapType: MapType.normal,
       initialCameraPosition: CameraPosition(
-        target: LatLng(42.811512, -1.640840),
+        target: LatLng(42.825541, -1.632107),
         zoom: 16.0,
       ),
       onCameraMove: (value) {
