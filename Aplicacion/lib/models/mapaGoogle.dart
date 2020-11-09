@@ -38,12 +38,13 @@ class _MapaGoogleState extends State<MapaGoogle> {
         target: LatLng(40.416782, -3.703719),
         zoom: 4.0,
       ),
+      /*
       onCameraMove: (value) {
         setState(() {
           _actualZoom = value.zoom;
           _actualLocalizacion = value.target;
         });
-      },
+      },*/
     );
   }
 }
