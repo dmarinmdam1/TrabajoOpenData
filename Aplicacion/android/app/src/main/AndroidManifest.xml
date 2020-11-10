@@ -26,4 +26,5 @@
     <uses-permission
         android:name="android.permission.WAKE_LOCK"
         android:minSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>
