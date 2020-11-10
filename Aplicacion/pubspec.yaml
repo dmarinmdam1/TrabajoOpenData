@@ -24,9 +24,10 @@ dependencies:
     sdk: flutter
   get:
   get_storage:
-  google_maps_flutter: ^1.0.6
+  google_maps_flutter: 1.0.5
   geocoding: ^1.0.5
   intl: ^0.16.1
+  location: ^3.0.0
 
   cupertino_icons: ^0.1.3
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:aplicacion/models/drawer.dart';
-import 'package:aplicacion/models/mapaGoogle.dart';
+import 'package:aplicacion/models/mapaFlutter.dart';
 import 'package:aplicacion/screens/ajustes.dart';
 
 class Mapa extends StatefulWidget {
@@ -41,7 +41,7 @@ class _MapaState extends State<Mapa> {
                 ),
               ],
       ),
-      body: MapaGoogle(),
+      body: MapaFlutter(),
     );
   }
 }

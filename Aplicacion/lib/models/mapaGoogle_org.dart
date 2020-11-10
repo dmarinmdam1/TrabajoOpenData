@@ -1,15 +1,15 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class MapaGoogle extends StatefulWidget {
-  @override
-  State<MapaGoogle> createState() => _MapaGoogleState();
-
   static Future<void> setCurrentLocationAndZoom(LatLng nuevaLocalizacion, double nuevoZoom) async {
     _MapaGoogleState.setCurrentLocationAndZoom(nuevaLocalizacion, nuevoZoom);
   }
+
+  @override
+  State<MapaGoogle> createState() => _MapaGoogleState();
 }
 
 class _MapaGoogleState extends State<MapaGoogle> {
@@ -19,12 +19,10 @@ class _MapaGoogleState extends State<MapaGoogle> {
   static double _actualZoom;
 
   static Future<void> setCurrentLocationAndZoom(LatLng nuevaLocalizacion, double nuevoZoom) async {
-    if (nuevaLocalizacion != _actualLocalizacion || nuevoZoom != _actualZoom) {
-      _actualLocalizacion = nuevaLocalizacion;
-      _actualZoom = nuevoZoom;
-      final GoogleMapController controller = await _controller.future;
-      controller.moveCamera(CameraUpdate.newCameraPosition(CameraPosition(target: _actualLocalizacion, zoom: _actualZoom)));
-    }
+    _actualLocalizacion = nuevaLocalizacion;
+    _actualZoom = nuevoZoom;
+    final GoogleMapController controller = await _controller.future;
+    controller.moveCamera(CameraUpdate.newCameraPosition(CameraPosition(target: _actualLocalizacion /*, zoom: _actualZoom*/)));
   }
 
   @override
@@ -34,9 +32,10 @@ class _MapaGoogleState extends State<MapaGoogle> {
         if (!_controller.isCompleted) _controller.complete(controller);
       },
       mapType: MapType.normal,
+      myLocationButtonEnabled: true,
       initialCameraPosition: CameraPosition(
         target: LatLng(40.416782, -3.703719),
-        zoom: 4.0,
+        zoom: 16.0,
       ),
       /*
       onCameraMove: (value) {
@@ -47,4 +46,4 @@ class _MapaGoogleState extends State<MapaGoogle> {
       },*/
     );
   }
-}
+}*/

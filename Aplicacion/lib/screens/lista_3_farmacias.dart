@@ -1,10 +1,8 @@
-import 'package:aplicacion/models/mapaGoogle.dart';
+// import 'package:aplicacion/models/mapaFlutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'dart:math';
-import 'package:get_storage/get_storage.dart';
+//import 'package:get_storage/get_storage.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'package:aplicacion/models/farmaciaDeGuardia.dart';
 import 'package:aplicacion/screens/mapa.dart';
@@ -62,11 +60,11 @@ class _Lista3FarmaciasState extends State<Lista3Farmacias> {
     farmaciasFiltradas.forEach((farmacia) {
       final elementoLista = GestureDetector(
         onTap: () async {
-          //List<Location> coordenadas = await locationFromAddress(farmacia.direccin);
+          List<Location> coordenadas = await locationFromAddress(farmacia.direccin);
+          print(coordenadas.first);
           //GetStorage().write("ultimasCoordenadas", coordenadas.first);
           args["fromLista"] = true;
-          var rng = new Random();
-          await MapaGoogle.setCurrentLocationAndZoom(LatLng(rng.nextDouble() * (43.626166 - 37.006934) + 43.626166, rng.nextDouble() * (-0.857006 - -8.972612) + -0.857006 /*42.825541, -1.632107*/ /*coordenadas.first.latitude, coordenadas.first.longitude*/), 8.0);
+          //await MapaFlutter.setCurrentLocationAndZoom(LatLng(/*42.825541, -1.632107*/ coordenadas.first.latitude, coordenadas.first.longitude), 16.0);
           Get.to(Mapa(), arguments: args);
         },
         child: Container(
