@@ -76,10 +76,12 @@ class _Lista1GruposState extends State<Lista1Grupos> {
         onTap: () {
           GetStorage().write("ultimoGrupo", grupo);
           args["grupo"] = grupo;
-          Get.to(Lista2Localidades(), arguments: args);
+          Get.to(Lista2Localidades(), arguments: args).then((value) {
+            setState(() {});
+          });
         },
         child: Container(
-          color: Color.fromRGBO(255, 255, 255, 1),
+          color: GetStorage().read("ultimoGrupo") == grupo ? Colors.green[100] : Colors.white,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

@@ -43,6 +43,7 @@ dev_dependencies:
 flutter:
   assets:
     - data/farmaciasDeGuardia.json
+    - assets/images/iconoFarmacia.png
   fonts:
     - family: Roboto
       fonts: 

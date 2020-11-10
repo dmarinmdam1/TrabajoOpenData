@@ -70,7 +70,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
           size: 30,
         ),
         onTap: () {
-          Get.offAll(Mapa());
+          Get.offAll(Mapa(null));
         },
       ),
     );

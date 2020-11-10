@@ -59,10 +59,12 @@ class _Lista2LocalidadesState extends State<Lista2Localidades> {
         onTap: () {
           GetStorage().write("ultimaLocalidad", localidad);
           args["localidad"] = localidad;
-          Get.to(Lista3Farmacias(), arguments: args);
+          Get.to(Lista3Farmacias(), arguments: args).then((value) {
+            setState(() {});
+          });
         },
         child: Container(
-          color: Color.fromRGBO(255, 255, 255, 1),
+          color: GetStorage().read("ultimaLocalidad") == localidad ? Colors.green[100] : Colors.white,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

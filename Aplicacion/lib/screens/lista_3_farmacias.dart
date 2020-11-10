@@ -1,8 +1,8 @@
-// import 'package:aplicacion/models/mapaFlutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-//import 'package:get_storage/get_storage.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:latlong/latlong.dart';
 
 import 'package:aplicacion/models/farmaciaDeGuardia.dart';
 import 'package:aplicacion/screens/mapa.dart';
@@ -50,7 +50,7 @@ class _Lista3FarmaciasState extends State<Lista3Farmacias> {
   List<Widget> _elementosLista(List<FarmaciaDeGuardia> farmaciasFiltradas) {
     final List<Widget> retorno = [];
     retorno.add(SizedBox(
-      height: 2.0,
+      height: 2,
     ));
     retorno.add(Divider(
       color: Colors.black,
@@ -60,15 +60,23 @@ class _Lista3FarmaciasState extends State<Lista3Farmacias> {
     farmaciasFiltradas.forEach((farmacia) {
       final elementoLista = GestureDetector(
         onTap: () async {
-          List<Location> coordenadas = await locationFromAddress(farmacia.direccin);
-          print(coordenadas.first);
-          //GetStorage().write("ultimasCoordenadas", coordenadas.first);
+          GetStorage().write("ultimaFarmacia", farmacia.codFarmacia);
+          List<Location> coordenadas = await locationFromAddress(farmacia.direccin + ", " + farmacia.grupo);
+          GetStorage().write(
+            "ultimasCoordenadas",
+            [
+              coordenadas.first.latitude,
+              coordenadas.first.longitude
+            ],
+          );
           args["fromLista"] = true;
-          //await MapaFlutter.setCurrentLocationAndZoom(LatLng(/*42.825541, -1.632107*/ coordenadas.first.latitude, coordenadas.first.longitude), 16.0);
-          Get.to(Mapa(), arguments: args);
+          args["coordenadas"] = LatLng(coordenadas.first.latitude, coordenadas.first.longitude);
+          Get.to(Mapa(farmacia), arguments: args).then((value) {
+            setState(() {});
+          });
         },
         child: Container(
-          color: Color.fromRGBO(255, 255, 255, 1),
+          color: GetStorage().read("ultimaFarmacia") == farmacia.codFarmacia ? Colors.green[100] : Colors.white,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
