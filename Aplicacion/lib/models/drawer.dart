@@ -35,7 +35,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
         child: new DrawerHeader(
           child: Text("Farmacias de Guardia", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center),
           decoration: BoxDecoration(
-            color: Color.fromRGBO(160, 0, 160, 1),
+            color: Colors.purple[400],
           ),
         ),
       ),
